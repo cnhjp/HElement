@@ -17,6 +17,6 @@
 
 <script lang="ts">
 export default {
-    name: 'HMain',
-}
+  name: 'HMain',
+};
 </script>

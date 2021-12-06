@@ -1,32 +1,31 @@
 <style lang="scss">
 @include b(header) {
-    padding: $--header-padding;
-    box-sizing: border-box;
-    flex-shrink: 0;
+  padding: $--header-padding;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 </style>
 
 <template>
-    <header class="h-header" :style="{ height: height }">
-        <slot></slot>
-    </header>
+  <header class="h-header" :style="{ height: height }">
+    <slot></slot>
+  </header>
 </template>
 
 <script lang="ts">
 export default {
-    name: 'HHeader',
-}
+  name: 'HHeader',
+};
 </script>
 
 <script lang="ts" setup>
 import { withDefaults } from 'vue';
 interface Props {
-    height?: string,
+  height?: string,
 }
 
 withDefaults(defineProps<Props>(), {
-    height: '60px'
+  height: '60px',
 });
-
 
 </script>

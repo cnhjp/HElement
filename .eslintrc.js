@@ -10,4 +10,13 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["vue", "@typescript-eslint"],
+  rules: {
+    "no-undef": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "vue/no-multiple-template-root": "off",
+    "vue/multi-word-component-names": "off",
+    "import/first": "off",
+    "import/newline-after-import": "off",
+  },
 };

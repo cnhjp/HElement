@@ -12,14 +12,13 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-
 const routes = ref([
-    { name: 'Container Demo', routeName: 'demo-container' }
-])
+  { name: 'Container Demo', routeName: 'demo-container' },
+]);
 
 const router = useRouter();
 
 function toPage(routeName: string) {
-    router.push({ name: routeName });
+  router.push({ name: routeName });
 }
 </script>
