@@ -1,13 +1,3 @@
 <template>
-  <div class="hello">
-    <div class="blue">blue</div>
-  </div>
+    <router-view></router-view>
 </template>
-
-<style lang="scss">
-.hello {
-  .blue {
-    color: blue;
-  }
-}
-</style>
