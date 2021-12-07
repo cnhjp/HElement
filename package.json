@@ -5,24 +5,34 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
-    "lint": "npx eslint --ext .ts,.js,.vue src"
+    "lint": "npx eslint --ext .ts,.js,.vue src",
+    "test": "jest"
   },
   "dependencies": {
     "vue": "^3.2.16",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "@vue/test-utils": "^2.0.0-rc.17"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.3",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
     "@vitejs/plugin-vue": "^1.9.3",
+    "babel-jest": "26",
     "eslint": "^8.4.0",
     "eslint-config-airbnb": "^19.0.2",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-vue": "^8.2.0",
     "husky": "^7.0.4",
+    "jest": "26",
     "sass": "^1.44.0",
+    "ts-jest": "26",
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
+    "vue-jest": "^5.0.0-alpha.10",
     "vue-tsc": "^0.3.0"
   }
 }
