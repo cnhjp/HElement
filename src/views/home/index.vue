@@ -14,6 +14,7 @@ import { useRouter } from 'vue-router';
 
 const routes = ref([
   { name: 'Container Demo', routeName: 'demo-container' },
+  { name: 'Button Demo', routeName: 'demo-button' },
 ]);
 
 const router = useRouter();

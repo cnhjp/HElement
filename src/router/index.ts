@@ -6,6 +6,11 @@ const demos = [
     name: 'demo-container',
     component: () => import('../views/demos/container/index.vue'),
   },
+  {
+    path: '/demo-button',
+    name: 'demo-button',
+    component: () => import('../views/demos/button/index.vue'),
+  },
 ];
 
 const routes = [
