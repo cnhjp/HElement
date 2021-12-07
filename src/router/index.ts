@@ -1,11 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Demo from '../demos/index.vue';
 
-const demoRoutes = [
+const demos = [
   {
     path: '/demo-container',
     name: 'demo-container',
-    component: () => import('../demos/container/index.vue'),
+    component: () => import('../views/demos/container/index.vue'),
   },
 ];
 
@@ -13,9 +12,14 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Demo,
+    component: () => import('../views/home/index.vue'),
   },
-  ...demoRoutes,
+  {
+    path: '/test',
+    name: 'Test',
+    component: () => import('../views/test/index.vue'),
+  },
+  ...demos,
 ];
 
 export default createRouter({

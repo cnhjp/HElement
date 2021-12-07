@@ -4,8 +4,9 @@
         <h-main>main</h-main>
         <h-footer>footer</h-footer>
     </h-container>
+    <br />
 
-    <h-container style="margin-top:50px;">
+    <h-container>
         <h-header>header</h-header>
         <h-container>
             <h-aside width="100px">aside</h-aside>
@@ -13,8 +14,9 @@
         </h-container>
         <h-footer>footer</h-footer>
     </h-container>
+    <br />
 
-    <h-container style="margin-top:50px;">
+    <h-container>
         <h-aside>aside</h-aside>
         <h-container>
             <h-header>header</h-header>
@@ -29,6 +31,9 @@
 </script>
 
 <style lang="scss" scoped>
+* {
+    font-size: 1.2em;
+}
 :deep(.h-container) {
     background-color: antiquewhite;
 }

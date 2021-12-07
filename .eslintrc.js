@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 module.exports = {
   env: {
     browser: true,
@@ -18,5 +19,7 @@ module.exports = {
     "vue/multi-word-component-names": "off",
     "import/first": "off",
     "import/newline-after-import": "off",
+    "linebreak-style": 0,
+    indent: ["error", 2],
   },
 };
