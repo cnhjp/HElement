@@ -1,4 +1,5 @@
 <style lang="scss">
+@import "../styles/mixin.scss";
 @include b(footer) {
   padding: $--footer-padding;
   box-sizing: border-box;

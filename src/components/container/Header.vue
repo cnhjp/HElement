@@ -1,4 +1,5 @@
 <style lang="scss">
+@import "../styles/mixin.scss";
 @include b(header) {
   padding: $--header-padding;
   box-sizing: border-box;

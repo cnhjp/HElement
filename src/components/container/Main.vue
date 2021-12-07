@@ -1,4 +1,5 @@
 <style lang="scss">
+@import "../styles/mixin.scss";
 @include b(main) {
     display: block;
     flex: 1;
@@ -17,6 +18,6 @@
 
 <script lang="ts">
 export default {
-  name: 'HMain',
+    name: 'HMain',
 };
 </script>
