@@ -9,9 +9,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "@vue/test-utils": "^2.0.0-rc.17",
     "vue": "^3.2.16",
-    "vue-router": "^4.0.12",
-    "@vue/test-utils": "^2.0.0-rc.17"
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

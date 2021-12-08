@@ -82,7 +82,11 @@
 <template>
   <button
     class="h-button"
-    :class="[buttonSize ? `h-button--${buttonSize}` : '', type ? `h-button--${type}` : '']"
+    :class="[
+      buttonSize ? `h-button--${buttonSize}` : '',
+      type ? `h-button--${type}` : '',
+      round ? 'is-round' : '',
+      circle ? 'is-circle' : '']"
   >
     <slot></slot>
   </button>
@@ -100,12 +104,16 @@ import { useGlobalConfig } from '../../utils';
 
 interface Props {
   size?: '' | 'small' | 'medium' | 'large',
-  type?: '' | 'primary' | 'success' | 'danger'
+  type?: '' | 'primary' | 'success' | 'danger',
+  round?: boolean,
+  circle?: boolean,
 }
 
 const props = withDefaults(defineProps<Props>(), {
   size: '',
   type: '',
+  round: false,
+  circle: false,
 });
 
 const globalConfig = useGlobalConfig();

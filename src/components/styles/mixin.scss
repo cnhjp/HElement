@@ -48,6 +48,10 @@
   border-radius: $border-radius;
   &.is-round {
     padding: $padding-vertical $padding-horizontal;
+    border-radius: max($padding-horizontal, $padding-vertical);
+  }
+  &.is-circle {
+    border-radius: 50%;
   }
 }
 
