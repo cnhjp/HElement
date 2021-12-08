@@ -9,5 +9,6 @@
 <template>
     <div class="blue">blue</div>
     <div class="h-red">red</div>
-    <h-button type="primary">hello</h-button>
+    <h-button circle type="primary">hello</h-button>
+    <h-button round size="small">this is my house</h-button>
 </template>
